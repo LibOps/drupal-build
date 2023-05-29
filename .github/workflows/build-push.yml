@@ -54,9 +54,9 @@ jobs:
     - name: Add Drupal core
       run: |
         composer require drupal/core-dev:^${{ inputs.drupal_version }} --dev
-        composer require drupal/core-composer-scaffold:^${{ inputs.drupal_version }} \
-                         drupal/core-project-message:^${{ inputs.drupal_version }} \
-                         drupal/core-recommended:^${{ inputs.drupal_version }}
+        composer require -W drupal/core-composer-scaffold:^${{ inputs.drupal_version }} \
+                            drupal/core-project-message:^${{ inputs.drupal_version }} \
+                            drupal/core-recommended:^${{ inputs.drupal_version }}
 
     - name: Build and push
       uses: docker/build-push-action@v3
