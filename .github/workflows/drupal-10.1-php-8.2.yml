@@ -1,0 +1,16 @@
+name: Build and push (8.1)
+on:
+  schedule:
+    - cron: '00 1 * * *'
+  push:
+    branches:
+jobs:
+  deploy:
+    uses: ./.github/workflows/build-push.yml
+    with:
+      drupal_version: 10.1
+      php_version: 8.2
+    permissions:
+      contents: read
+      id-token: write
+    secrets: inherit
