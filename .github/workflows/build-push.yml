@@ -53,7 +53,7 @@ jobs:
 
     - name: Add Drupal core
       run: |
-        composer require drupal/core-dev:^${{ inputs.drupal_version }} --dev
+        composer require -W drupal/core-dev:^${{ inputs.drupal_version }} --dev
         composer require -W drupal/core-composer-scaffold:^${{ inputs.drupal_version }} \
                             drupal/core-project-message:^${{ inputs.drupal_version }} \
                             drupal/core-recommended:^${{ inputs.drupal_version }}
