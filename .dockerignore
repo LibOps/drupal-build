@@ -1,0 +1,4 @@
+.git
+gha-creds-*.json
+.composer
+
