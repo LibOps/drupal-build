@@ -1,4 +1,4 @@
-name: Build and push (8.1)
+name: Build and push (Drupal 10.1 + PHP 8.2)
 on:
   schedule:
     - cron: '00 1 * * *'
