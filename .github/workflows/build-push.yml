@@ -58,6 +58,9 @@ jobs:
                             drupal/core-project-message:^${{ inputs.drupal_version }} \
                             drupal/core-recommended:^${{ inputs.drupal_version }}
 
+    - name: Add drush
+      run: composer require drush/drush 
+
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
