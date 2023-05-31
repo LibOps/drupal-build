@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "composer/installers": "^2.0"
+        "composer/installers": "^2.0",
+        "drush/drush": "^11.5"
     },
     "conflict": {
         "drupal/drupal": "*"
